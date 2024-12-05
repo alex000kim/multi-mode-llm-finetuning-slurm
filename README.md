@@ -90,3 +90,27 @@ Then, you can monitor the GPU utilization by running `nvtop`.
 ![nvtop on worker-2](imgs/worker-2-gpu.png)
 - worker-3
 ![nvtop on worker-3](imgs/worker-3-gpu.png)
+
+## Useful SLURM Commands
+
+Here are some useful SLURM commands to help you manage your jobs on the cluster:
+
+- **Submit a Job**: Use `sbatch` to submit a job script for batch execution.
+  ```bash
+  sbatch sbatch.sh
+  ```
+
+- **Check Job Queue**: Use `squeue` to display information about jobs in the queue.
+  ```bash
+  squeue -u $USER
+  ```
+
+- **Cancel a Job**: Use `scancel` to cancel a pending or running job.
+  ```bash
+  scancel <job_id>
+  ```
+
+- **Show Job Details**: Use `scontrol` to get detailed information about a specific job.
+  ```bash
+  scontrol show job <job_id>
+  ```
