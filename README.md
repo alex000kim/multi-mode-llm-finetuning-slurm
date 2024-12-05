@@ -6,8 +6,8 @@
 To get started, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/alex000kim/multi-mode-llm-finetuning-slurm.git
-cd multi-mode-llm-finetuning-slurm
+git clone https://github.com/alex000kim/multi-node-llm-finetuning-slurm.git
+cd multi-node-llm-finetuning-slurm
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
